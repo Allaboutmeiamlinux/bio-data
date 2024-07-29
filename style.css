@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ffd700;
+}
+
+form {
+    background-color: beige;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    margin: 20px auto;
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Max width to prevent it from being too large */
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: darkslategray;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid darkslategray;
+    padding-bottom: 10px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="date"], 
+input[type="password"], 
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: darkslategray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+.photo-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 100px; /* Adjust the width to your preference for a square box */
+    height: 100px; /* Adjust the height to match the width for a square box */
+    overflow: hidden;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire box */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    ul {
+        flex-direction: column;
+    }
+    
+    ul li {
+        margin: 10px 0;
+    }
+    
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    
+    input[type="submit"] {
+        padding: 12px;
+    }
+    
+    .photo-container {
+        width: 80px;
+        height: 80px;
+    }
+    
+    form {
+        padding: 10px;
+    }
+}

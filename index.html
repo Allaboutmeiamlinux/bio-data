@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page 1 -->
+    <section id="page1" class="page">
+        <form action="#" onsubmit="validateLoginForm(event)">
+            <h2>LOGIN</h2>  
+            <label for="u_name">Username</label>
+            <input type="text" id="u_name" name="u_name" placeholder="Enter your username" required>
+            <label for="passWord">Password</label>
+            <input type="password" id="passWord" name="passWord" placeholder="Enter your password" required>
+            <button type="submit">Submit</button>
+            <button type="button" onclick="showPage('#')">Sign Up</button>
+        </form>
+    </section>    
+    <!-- Page 2 --> 
+    <section id="page2" class="page" style="display: none;">
+        <form onsubmit="submitForm(event)" action="#">
+            <h1>BIO DATA</h1>  
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          
+            <label for="dept">Department:</label>
+            <select id="department" name="department" required>
+              <option value="" selected>Please select an option</option>
+              <option value="ct">Computer Engineering</option>
+              <option value="ce">Civil Engineering</option>
+              <option value="me">Mechanical Engineering</option>
+              <option value="eee">Electrical & Electronics Engineering</option>
+              <option value="ae">Architecture Engineering</option>
+              <option value="am">Automobile Engineering</option>
+            </select>
+          
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester" required>
+              <option value="" selected>Please select an option</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+          </select>
+           
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob" required>
+          
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+              <option value="" selected>Please select an option</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+          </select>
+          
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="2" cols="40" placeholder="Enter your address" required></textarea>
+          
+            <label for="fathername">Father Name:</label>
+            <input type="text" id="fathername" name="fathername" placeholder="Enter your father name" required>
+          
+            <label for="fatheroccupation">Father Occupation:</label>
+            <input type="text" id="fatheroccupation" name="fatheroccupation" placeholder="Enter your father occupation" required>  
+          
+            <label for="mothername">Mother Name:</label>
+            <input type="text" id="mothername" name="mothername" placeholder="Enter your mother name" required>
+          
+            <label for="motheroccupation">Mother Occupation:</label>
+            <input type="text" id="motheroccupation" name="motheroccupation" placeholder="Enter your mother occupation" required>
+          
+            <label for="phoneno">Phone Number:</label>
+            <input type="text" id="phoneno" name="phoneno" placeholder="Enter your phone number" required>
+          
+            <label for="emailid">Email ID:</label>
+            <input type="email" id="emailid" name="emailid" placeholder="Enter your email ID" required>
+          
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" name="qualification" placeholder="Enter your qualification" required>
+          
+            <label for="religion">Religion:</label>
+            <input type="text" id="religion" name="religion" placeholder="Enter your religion" required>
+          
+            <label for="place">Place:</label>
+            <input type="text" id="place" name="place" placeholder="Enter your place" required>
+          
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" placeholder="Enter your age" required>
+          
+            <button type="submit" value="Submit">Submit</button>
+          
+          </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
